@@ -1,10 +1,6 @@
 package com.globant;
 import org.testng.annotations.*;
 
-
-/**
- * Unit test for simple App.
- */
 public class AppTest {
 
     @BeforeSuite
@@ -58,4 +54,9 @@ public class AppTest {
         System.out.println("Facebook account has been successfully log out.");
     }
 
+
+    @AfterSuite
+    public void closeBrowser(){
+        System.out.println("The browser has been closed");
+    }
 }
