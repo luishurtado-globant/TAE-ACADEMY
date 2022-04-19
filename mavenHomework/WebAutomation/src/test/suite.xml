@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="facebook test suite">
+    <parameter name="browser" value="Chrome"></parameter>
+    <parameter name="website" value="Facebook"></parameter>
+    <test name="facebook test">
+        <groups>
+            <run>
+                <include name="Login"></include>
+                <include name="Profile"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.globant.AppTest"></class>
+        </classes>
+    </test>
+    <test name="Facebook2 test">
+        <classes>
+            <class name="com.globant.AppTest">
+                <methods>
+                    <include name="loginAccount"></include>
+                    <include name="showProfile"></include>
+                    <include name="editProfile"></include>
+                    <include name="changeProfilePicture"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
