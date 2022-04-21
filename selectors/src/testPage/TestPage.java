@@ -1,3 +1,5 @@
+package testPage;
+
 public class TestPage {
     String authorName = "By.css .container address:first-of-type a:first-child ";
     String liElement = "By.css .container ul li:nth-child(3)";
